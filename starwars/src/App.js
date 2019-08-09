@@ -9,7 +9,7 @@ const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
-  const [characters, setCharacters] = useState([]);
+  const [State, setCharacters] = useState([]);
 
 
   // Fetch characters from the star wars api in an effect hook. Remember, anytime you have a 
@@ -38,7 +38,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">React Wars</h1>
       <div className = "CharacterCard">
-        {characters.map((character, index) => {
+        {State.map((character, index) => {
           return(
             <CharacterCard 
             character = {character} 

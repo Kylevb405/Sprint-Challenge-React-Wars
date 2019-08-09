@@ -2,16 +2,16 @@ import React, {useState, useEffect} from 'react';
 import { Card } from 'semantic-ui-react'
 
 
-export default function CharacterCard(character) {
+export default function CharacterCard(State) {
 
-  console.log(character.character.name)
+  console.log(State.character.name)
 
   return (
     <Card>
       <Card.Content>
-        <Card.Header>{character.character.name}</Card.Header>
-        <Card.Meta> Birth Year: {character.character.birth_year}</Card.Meta>
-        <Card.Description>Gender: {character.character.gender} Hair Color: {character.character.hair_color} Height: {character.character.height} Mass: {character.character.mass} Skin Color: {character.character.skin_color}  </Card.Description>
+        <Card.Header>{State.character.name}</Card.Header>
+        <Card.Meta> Birth Year: {State.character.birth_year}</Card.Meta>
+        <Card.Description>Gender: {State.character.gender} Hair Color: {State.character.hair_color} Height: {State.character.height} Mass: {State.character.mass} Skin Color: {State.character.skin_color}  </Card.Description>
       </Card.Content>
 
     </Card>
